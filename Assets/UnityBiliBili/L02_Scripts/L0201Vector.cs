@@ -26,6 +26,17 @@ public class L0201Vector : MonoBehaviour
         // 插值
         Debug.Log(Vector3.Lerp(Vector3.zero, Vector3.one, 0.5f));
 
+        // 旋转 : 欧拉角 , 四元数
+        Vector3 rotate = new Vector3(0, 30, 0);
+        Quaternion quaternion = Quaternion.identity;
+        // 欧拉角转为四元数
+        quaternion = Quaternion.Euler(rotate);
+        // 四元数转成欧拉角
+        rotate = quaternion.eulerAngles;
+        // 看向一个物体
+        quaternion = Quaternion.LookRotation(new Vector3(0,0,0));
+        Debug.Log(rotate);
+        Debug.Log(quaternion);
     }
 
     // Update is called once per frame
