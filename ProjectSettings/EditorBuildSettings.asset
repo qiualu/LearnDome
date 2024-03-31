@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/UnityBiliBili/L03SampleScene/SampleScene.unity
+    guid: 4c9142062168a57448c27854cb118214
+  - enabled: 1
+    path: Assets/UnityBiliBili/L03SampleScene/MyScene.unity
+    guid: b03397a97a3f68348b1836e5ad57cc23
   m_configObjects: {}
