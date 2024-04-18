@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,19 +7,19 @@ public class L3Application : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // ÓÎÏ·Êı¾İÎÄ¼ş¼ĞÂ·¾¶
-        Debug.Log(Application.dataPath + "/UnityBiliBili/L03SampleScene/ĞÂ½¨ÎÄ±¾ÎÄµµ.txt");
-        // ³Ö¾Ã»¯ÎÄ¼şÂ·¾¶
+        // æ¸¸æˆæ•°æ®æ–‡ä»¶å¤¹è·¯å¾„
+        Debug.Log(Application.dataPath + "/UnityBiliBili/L03SampleScene/è¯´æ˜æ–‡æ¡£.txt");
+        // æŒä¹…åŒ–æ–‡ä»¶è·¯å¾„
         Debug.Log(Application.persistentDataPath);
-        // StreamingAssetsÎÄ¼ş¼ĞÂ·¾¶(Ö»¶Á,ÅäÖÃ)
+        // StreamingAssetsæ–‡ä»¶å¤¹è·¯å¾„(åªè¯»,é…ç½®)
         Debug.Log(Application.streamingAssetsPath);
-        // ÁÙÊ±ÎÄ¼ş¼Ğ
+        // ä¸´æ—¶æ–‡ä»¶å¤¹
         Debug.Log(Application.temporaryCachePath);
-        // ¿ØÖÆÊÇ·ñÔÚºóÌ¨ÔËĞĞ
+        // æ§åˆ¶æ˜¯å¦åœ¨åå°è¿è¡Œ
         Debug.Log(Application.runInBackground);
-        // ´ò¿ªurl
+        // æ‰“å¼€url
         Application.OpenURL("www.baidu.com");
-        // ÍË³öÓÎÏ·
+        // é€€å‡ºæ¸¸æˆ
         Application.Quit();
 
     }
@@ -27,6 +27,6 @@ public class L3Application : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
