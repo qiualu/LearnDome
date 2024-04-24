@@ -7,6 +7,7 @@ public class L3Application : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         // 游戏数据文件夹路径
         Debug.Log(Application.dataPath + "/UnityBiliBili/L03SampleScene/说明文档.txt");
         // 持久化文件路径

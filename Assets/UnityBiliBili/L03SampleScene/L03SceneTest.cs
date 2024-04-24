@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -8,34 +8,35 @@ public class L03SceneTest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Á½¸öÀà,³¡¾°Àà,³¡¾°¹ÜÀíÀà  // ÏÈÔÚÎÄ¼ş-> ¹¹½¨ÖĞÌí¼Ó ¹¹½¨³¡¾°
+
+        // ä¸¤ä¸ªç±»,åœºæ™¯ç±»,åœºæ™¯ç®¡ç†ç±»  // å…ˆåœ¨æ–‡ä»¶-> æ„å»ºä¸­æ·»åŠ  æ„å»ºåœºæ™¯
         //SceneManager.LoadScene(1);
-        //³¡¾°Ãû³Æ
+        //åœºæ™¯åç§°
         Scene scene = SceneManager.GetActiveScene();
         //Debug.Log(scene.name);
-        Debug.Log($" ³¡¾°Ãû³Æ   : {scene.name}");
-        //³¡¾°ÊÇ·ñÒÑ¾­¼ÓÔØ
+        Debug.Log($" åœºæ™¯åç§°   : {scene.name}");
+        //åœºæ™¯æ˜¯å¦å·²ç»åŠ è½½
         //Debug.Log(scene.isLoaded);
-        Debug.Log($"³¡¾°ÊÇ·ñÒÑ¾­¼ÓÔØ : {scene.isLoaded}");
-        //³¡¾°Â·¾¶
+        Debug.Log($"åœºæ™¯æ˜¯å¦å·²ç»åŠ è½½ : {scene.isLoaded}");
+        //åœºæ™¯è·¯å¾„
         //Debug.Log(scene.path);
-        Debug.Log($"³¡¾°Â·¾¶ : {scene.path}");
-        //³¡¾°Ë÷Òı
+        Debug.Log($"åœºæ™¯è·¯å¾„ : {scene.path}");
+        //åœºæ™¯ç´¢å¼•
         Debug.Log(scene.buildIndex);
-        Debug.Log($"³¡¾°Ë÷Òı  : {scene.buildIndex}");
+        Debug.Log($"åœºæ™¯ç´¢å¼•  : {scene.buildIndex}");
         GameObject[] gos = scene.GetRootGameObjects();
         //Debug.Log(gos.Length);
-        Debug.Log($"³¡¾°Ë÷Òı³¤¶È  : {gos.Length}");
+        Debug.Log($"åœºæ™¯ç´¢å¼•é•¿åº¦  : {gos.Length}");
 
-        // ³¡¾°¹ÜÀíÀà
+        // åœºæ™¯ç®¡ç†ç±»
 
-        // ´´½¨ĞÂµÄ³¡¾°
+        // åˆ›å»ºæ–°çš„åœºæ™¯
         Scene newScene = SceneManager.CreateScene("newScene");
-        // ÒÑ¼ÓÔØ³¡¾°¸öÊı
+        // å·²åŠ è½½åœºæ™¯ä¸ªæ•°
         Debug.Log(SceneManager.sceneCount);
-        // Ğ¶ÔØ³¡¾°
+        // å¸è½½åœºæ™¯
         SceneManager.UnloadSceneAsync(newScene);
-        // ¼ÓÔØ³¡¾°
+        // åŠ è½½åœºæ™¯
         SceneManager.LoadScene("MyScene", LoadSceneMode.Additive);
         //SceneManager.LoadScene
 
@@ -44,6 +45,6 @@ public class L03SceneTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

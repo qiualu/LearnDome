@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,23 +10,24 @@ public class L0204TimeTest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // ÓÎÏ·¿ªÊ¼µ½ÏÖÔÚµÄËù»¨µÄÊ±¼ä
+        // æ¸¸æˆå¼€å§‹åˆ°çŽ°åœ¨çš„æ‰€èŠ±çš„æ—¶é—´
         Debug.Log(Time.time);
-        // Ê±¼äËõ·ÅÖµ
+        // æ—¶é—´ç¼©æ”¾å€¼
         Debug.Log(Time.timeScale);
-        // ¹Ì¶¨Ê±¼ä¼ä¸ô
+        // å›ºå®šæ—¶é—´é—´éš”
         Debug.Log(Time.fixedDeltaTime);
-        // ÉÏÒ»Ö¡µ½ÕâÒ»Ö¡ËùÓÃµÄÓÎÏ·Ê±¼ä
+        // ä¸Šä¸€å¸§åˆ°è¿™ä¸€å¸§æ‰€ç”¨çš„æ¸¸æˆæ—¶é—´
         Debug.Log(Time.deltaTime);
     }
 
     // Update is called once per frame
     void Update()
     {
-        // ÉÏÒ»Ö¡µ½ÕâÒ»Ö¡ËùÓÃµÄÓÎÏ·Ê±¼ä
+        // ä¸Šä¸€å¸§åˆ°è¿™ä¸€å¸§æ‰€ç”¨çš„æ¸¸æˆæ—¶é—´
         //Debug.Log(Time.deltaTime);
         timer += Time.deltaTime;
-        if (timer > 3) {
+        if (timer > 3)
+        {
             Debug.Log("timer > 3 ");
             timer = 0;
         }
@@ -34,7 +35,7 @@ public class L0204TimeTest : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
+
     }
 
 

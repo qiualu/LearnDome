@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -7,52 +7,52 @@ public class L0203Empty : MonoBehaviour
 {
 
     public GameObject Cube;
-    // »ñÈ¡Ô¤ÉèÌå
-    public GameObject Prefab; 
+    // è·å–é¢„è®¾ä½“
+    public GameObject Prefab;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
 
-        // ÄÃµ½µ±Ç°½Å±¾Ëù¹ÒÔØµÄÓÎÏ·ÎïÌå
+
+        // æ‹¿åˆ°å½“å‰è„šæœ¬æ‰€æŒ‚è½½çš„æ¸¸æˆç‰©ä½“
         // GameObject go = this.gameObject;
-        // Ãû³Æ
+        // åç§°
         Debug.Log(gameObject.name);
         // tag
         Debug.Log(gameObject.tag);
         // layer 
         Debug.Log(gameObject.layer);
-        // Á¢·½ÌåµÄÃû³Æ
+        // ç«‹æ–¹ä½“çš„åç§°
         Debug.Log(Cube.name);
-        //Debug.Log(Cube.active); // ÊÇ·ñ¼¤»î
-        //µ±Ç°ÕæÕıµÄ¼¤»î×´Ì¬
-        Debug.Log(Cube.activeInHierarchy); // ÊÇ·ñ¼¤»î
-        // ±¾ÉíÊÇ·ñ¼¤»î×´Ì¬
-        Debug.Log(Cube.activeSelf); // ÊÇ·ñ¼¤»î
-        // »ñÈ¡ Transform×é¼ş
+        //Debug.Log(Cube.active); // æ˜¯å¦æ¿€æ´»
+        //å½“å‰çœŸæ­£çš„æ¿€æ´»çŠ¶æ€
+        Debug.Log(Cube.activeInHierarchy); // æ˜¯å¦æ¿€æ´»
+        // æœ¬èº«æ˜¯å¦æ¿€æ´»çŠ¶æ€
+        Debug.Log(Cube.activeSelf); // æ˜¯å¦æ¿€æ´»
+        // è·å– Transformç»„ä»¶
         // Transform trans = this.transform;
         Debug.Log(transform.position);
-        // »ñÈ¡ÆäËû×é¼ş
+        // è·å–å…¶ä»–ç»„ä»¶
         BoxCollider bc = GetComponent<BoxCollider>();
-        // »ñÈ¡µ±Ç°ÎïÌåµÄ×ÓÎïÌåÉíÉÏµÄÄ³¸ö×é¼ş
+        // è·å–å½“å‰ç‰©ä½“çš„å­ç‰©ä½“èº«ä¸Šçš„æŸä¸ªç»„ä»¶
         //GetComponentInParent<BoxCollider>();
         //GetComponentInParent<BoxCollider>();
-        // Ìí¼ÓÒ»¸ö×é¼ş
+        // æ·»åŠ ä¸€ä¸ªç»„ä»¶
         //gameObject.AddComponent<AudioSource>();
         Cube.AddComponent<AudioSource>();
 
-        // Í¨¹ıÓÎÏ·ÎïÌåµÄÃû³ÆÀ´»ñÈ¡ÓÎÏ·ÎïÌå
+        // é€šè¿‡æ¸¸æˆç‰©ä½“çš„åç§°æ¥è·å–æ¸¸æˆç‰©ä½“
         GameObject test = GameObject.Find("Test");
         Debug.Log(test.name);
-        // Í¨¹ıÓÎÏ·±êÇ©À´»ñÈ¡ÓÎÏ·ÎïÌå
+        // é€šè¿‡æ¸¸æˆæ ‡ç­¾æ¥è·å–æ¸¸æˆç‰©ä½“
         test = GameObject.FindWithTag("Enemy");
         Debug.Log(test.name);
 
-        // Í¨¹ıÔ¤ÉèÌåÀ´ÊµÀı»¯Ò»¸öÓÎÏ·¶ÔÏó Vector3(1.93, 1, 8.75)
+        // é€šè¿‡é¢„è®¾ä½“æ¥å®ä¾‹åŒ–ä¸€ä¸ªæ¸¸æˆå¯¹è±¡ Vector3(1.93, 1, 8.75)
         Instantiate(Prefab, Vector3.one, Quaternion.identity);
-        // Ïú»Ù
+        // é”€æ¯
         //Destroy(go);
 
     }
@@ -60,6 +60,6 @@ public class L0203Empty : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

@@ -1,4 +1,4 @@
-using System.Collections;
+锘縰sing System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,7 +15,7 @@ public class L0202DebugTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // 绘制一条线
+        // 缁樺埗涓�鏉＄嚎
         Debug.DrawLine(Vector3.zero, Vector3.one);
     }
 }
