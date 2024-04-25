@@ -51,6 +51,12 @@ public class L4Transform : MonoBehaviour
         //transform.Rotate(Vector3.up, 1);
         // 绕着某个物体旋转
         //transform.RotateAround(Vector3.zero, Vector3.up, 1);
+        
+        // 子物体旋转
+        Transform trans = transform.Find("Child2");
+        trans = transform.GetChild(0);
+        trans.Rotate(Vector3.up, 1);
+        //trans.RotateAround(Vector3.zero, Vector3.up, 1);
         // 移动
         //transform.Translate(Vector3.forward * Time.deltaTime * 0.1f);
 
